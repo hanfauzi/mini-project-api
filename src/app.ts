@@ -34,7 +34,7 @@ export default class App {
   }
 
   private configure() {
-    this.app.use(cors({ origin: 'https://tickly-frontend-phi.vercel.app/' }));
+    this.app.use(cors());
     this.app.use(json());
     this.app.use(urlencoded({ extended: true }));
   }
